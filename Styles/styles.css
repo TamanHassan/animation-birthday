@@ -1,0 +1,100 @@
+body {
+   margin: 0;
+   font-family: sans-serif;
+   background: linear-gradient(to top right, #ffe0e9, #ffeaea);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden; 
+   position: relative;
+}
+
+.card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    z-index: 1;
+    }
+
+.card h1 {
+    font-size: 2.5rem;
+    color: #ff4e6d;
+    margin-bottom: 1rem;
+     }
+
+.message  {
+    font-size:1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    }
+
+.wish-btn {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+.wish-btn:hover {
+    background-color: #e0445e;
+    transform: scale(1.1);
+    }
+
+.balloon {
+    width: 30px;
+    height: 40px;
+    background: radial-gradient(circle at 30% 30%, #ff8fab, #ff4d6d);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    bottom: -50px;
+    animation: float-up 6s ease-in-out infinite;
+    z-index: 0;
+    opacity: 0.8;
+     }
+
+.balloon1 {
+    left: 20%;
+    animation-delay: 0s;
+     }
+
+.balloon2 {
+    left: 50%;
+    animation-delay: 2s;
+    }
+
+.balloon3 {
+    left: 80%;
+    animation-delay: 4s;
+    }
+
+@keyframes float-up {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+        }
+        50% {
+        transform: translateY(-300px) rotate(10deg);
+        opacity: 1;
+         }
+         100% {
+        transform: translateY(-600px) rotate(-10deg);
+        opacity: 0;
+        }
+        }
+
+            
+
+
+
+
+

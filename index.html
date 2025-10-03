@@ -13,6 +13,23 @@
      
      </head>
      <body>
+        <nav class="navbar">
+            <div class="Birthday"></div>
+            <div class="hamburger" id="hamburger">
+
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Wishes</a></li>
+            <li><a href="#">Memories</a></li>
+            <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+            
 
             <div class="balloon balloon1"></div>
             <div class="balloon balloon2"></div>
@@ -26,7 +43,16 @@
 
             </div>
 
-    </body>
-     </html>
+            <script>
+                const hamburger = document.getElementById("hamburger");
+                const navLinks = document.getElementById("hamburger");
+
+            hamburger.addEventListner("click", () => {
+                navLinks.classlist.toogle("active");
+
+            });
+            </script>
+     </body>
+    </html>
 
 

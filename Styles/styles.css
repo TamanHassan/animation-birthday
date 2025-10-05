@@ -99,11 +99,12 @@ body {
     width: 100%;
     background-color: #ff4d6d;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem 2rem;
     z-index: 10;
-    box-shadow: 0 4px 10px rgba(0,0,0,0,1)
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+    gap: 2rem;
      }
 
 .navbar .logo {
@@ -131,7 +132,7 @@ body {
      }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -164,6 +165,45 @@ body {
     display: flex;
     }
     }
+
+ .dropdown  {
+    position: relative;
+    }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ff4d6d;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+    min-width: 150px;
+    z-index:20;
+    }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+     }
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    }
+
+.dropdown-menu li a:hover {
+    background-color: #e0445e;
+    }
+
+
+
+
 
 
 

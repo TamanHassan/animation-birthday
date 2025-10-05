@@ -14,7 +14,10 @@
      </head>
      <body>
         <nav class="navbar">
-            <div class="Birthday"></div>
+            <div class="Birthday">
+                <span>Birthday</span>
+            </div>
+
             <div class="hamburger" id="hamburger">
 
             <div></div>
@@ -24,9 +27,14 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#">Wishes</a></li>
-            <li><a href="#">Memories</a></li>
-            <li><a href="#">Gallery</a></li>
+
+            <li class="dropdown">
+                <a href="#">Memories</a>
+                <ul class="dropdown-menu">
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
             </ul>
+            </li>
         </nav>
 
             
@@ -45,10 +53,10 @@
 
             <script>
                 const hamburger = document.getElementById("hamburger");
-                const navLinks = document.getElementById("hamburger");
+                const navLinks = document.getElementById("navLinks");
 
-            hamburger.addEventListner("click", () => {
-                navLinks.classlist.toogle("active");
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
 
             });
             </script>

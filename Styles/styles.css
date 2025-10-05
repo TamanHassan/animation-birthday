@@ -92,6 +92,7 @@ body {
         opacity: 0;
         }
         }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -102,7 +103,7 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     z-index: 10;
-    box-shadow: 0 4px 10px rgba(0.0,0,0,1)
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1)
      }
 
 .navbar .logo {
@@ -130,8 +131,9 @@ body {
      }
 
 .hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
+    gap: 5px;
     cursor: pointer;
      }
 
